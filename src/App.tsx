@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './Styles/css/Amount.css';
+import Header from './Components/Header'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Amount from './Components/Amount';
+import AddTransaction from './Components/AddTransaction';
+import Transaction from './Components/Transaction';
+import {ExpenseProvider} from './Context/MyContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ExpenseProvider>
+      <Header></Header>
+      <Amount></Amount>
+      <Transaction></Transaction>
+      <AddTransaction></AddTransaction>
+    </ExpenseProvider>
   );
 }
 
