@@ -6,8 +6,11 @@ import Amount from './Components/Amount';
 import AddTransaction from './Components/AddTransaction';
 import Transaction from './Components/Transaction';
 import {ExpenseProvider} from './Context/MyContext';
+import {configureNotification} from './Services/FirebaseService'
 
 function App() {
+
+  configureNotification()
   return (
     <ExpenseProvider>
       <Header></Header>

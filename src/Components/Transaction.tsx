@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import { Row, Col, ListGroup,Spinner} from 'react-bootstrap'
+import { Row, Col, ListGroup} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {MyContext} from '../Context/MyContext'
 import {faTrash} from '@fortawesome/free-solid-svg-icons'
